@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    let a = getRndInteger(-100, 100);
+    let b = getRndInteger(-100, 100);
+
+    if (a >= 0 && b >= 0) {
+        alert(a - b);
+    } else if (a < 0 && b < 0) {
+        alert(a * b);
+    } else if (a * b < 0) {
+        alert(a + b);
+    }
+
+
+</script>
+</body>
+</html>
