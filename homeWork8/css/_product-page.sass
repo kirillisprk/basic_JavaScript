@@ -1,0 +1,287 @@
+@import "var"
+
+@-webkit-keyframes scale-in-ver-top
+  0%
+    -webkit-transform: scaleY(0)
+    transform: scaleY(0)
+    -webkit-transform-origin: 100% 0
+    transform-origin: 100% 0
+    opacity: 1
+
+  100%
+    -webkit-transform: scaleY(1)
+    transform: scaleY(1)
+    -webkit-transform-origin: 100% 0
+    transform-origin: 100% 0
+    opacity: 1
+
+@keyframes scale-in-ver-top
+  0%
+    -webkit-transform: scaleY(0)
+    transform: scaleY(0)
+    -webkit-transform-origin: 100% 0
+    transform-origin: 100% 0
+    opacity: 1
+
+  100%
+    -webkit-transform: scaleY(1)
+    transform: scaleY(1)
+    -webkit-transform-origin: 100% 0
+    transform-origin: 100% 0
+    opacity: 1
+
+
+.page-product
+  margin-top: 60px
+
+.sidebar
+  width: 20%
+  margin-right: 3%
+
+.product-page
+  width: 75%
+
+
+.page-product-flex
+  display: flex
+  justify-content: space-between
+
+.category-product-details
+  text-decoration: none
+
+.category-product-details > .category-summary:first-of-type
+  list-style-type: none
+
+.category-summary
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.category-summary::after
+  content: '\25BC'
+  display: block
+  font-size: 10px
+  transform: rotate(0)
+  transition: 0.7s transform ease
+
+
+.category-product-details[open] .category-box
+  -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+  animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+
+.category-product-details[open] > .category-summary::after
+  content: '\25B2'
+  font-size: 10px
+  transform: rotate(180deg)
+  transition: 0.7s transform ease
+
+
+.category-item-link
+  display: block
+  text-decoration: none
+  font-size: 14px
+  line-height: 33px
+  font-weight: 400
+  color: $grey
+
+  &:hover
+    color: $rosy-pink
+
+.category-summary
+  font-size: 14px
+  border-left: 5px solid $rosy-pink
+  border-bottom: 1px solid #eeeeee
+  padding: 10px
+  margin-bottom: 18px
+  cursor: pointer
+
+.category-title
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  color: $black-light
+
+.category-product-details[open] .category-summary .category-title
+  color: $rosy-pink
+
+
+.category-box
+  padding-left: 15px
+  padding-bottom: 30px
+
+.top-filter
+  display: flex
+  flex-direction: column
+
+.top-filter-up
+  display: flex
+  justify-content: space-between
+
+.sort
+  display: flex
+
+.top-filter-trending-now
+  width: 200px
+
+.trending-now-link
+  text-decoration: none
+  padding-right: 10px
+  color: $grey
+  font-size: 14px
+  font-weight: 300
+  line-height: 23px
+
+  &:hover
+    color: $rosy-pink
+
+.title-text
+  font-size: 14px
+  margin-bottom: 20px
+  color: $grey
+
+.trending-now-link-border
+  border-left: 1px solid
+  border-right: 1px solid
+  padding: 0 10px
+  margin-right: 10px
+
+.size-checkbox
+  width: 60px
+  font-size: 14px
+  font-weight: 300
+  text-transform: uppercase
+  color: $grey
+
+
+.array-checkbox
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  height: 55px
+
+
+.top-filter-size
+  width: 240px
+
+.value-range
+  display: flex
+  justify-content: space-between
+
+.top-filter-price
+  width: 260px
+
+.range-box-input
+  width: 100%
+
+.range-price
+  font-size: 14px
+  color: $grey
+  font-weight: 300
+  margin-top: 9px
+
+.sort
+  background-color: $grey-very-light
+  padding: 10px
+
+.sort-box
+  display: flex
+  align-items: center
+  margin-right: 10px
+
+  &:last-of-type
+    margin-right: 0
+
+.sort-by-value
+  font-size: 14px
+  font-weight: 400
+  color: $grey
+  background-color: $white
+  padding: 6px
+  height: 30px
+  border: 1px solid $grey-very-light
+
+
+.sort-by-select
+  font-size: 14px
+  font-weight: 400
+  color: $grey
+  background-color: $white
+  padding: 0 6px
+  height: 30px
+  border: 1px solid $grey-very-light
+  outline: none
+  border-left: none
+
+.product-box
+  margin-top: 50px
+
+.top-filter-down
+  margin-top: 40px
+
+.pagination
+  width: 261px
+  display: flex
+  justify-content: space-between
+  border: 1px solid $grey-very-light
+  border-radius: 3px
+
+.pagination-link
+  color: $grey-light
+  padding: 13px 7px
+  text-decoration: none
+
+  &:hover:not(.active-page)
+    background-color: $rosy-pink
+    color: $white
+
+.active-page
+  color: $rosy-pink
+
+.all-view-link
+  display: flex
+  width: 150px
+  align-items: center
+  justify-content: center
+  font-size: 16px
+  font-weight: 700
+  color: $rosy-pink
+  text-decoration: none
+  border: solid 1px $rosy-pink
+  border-radius: 3px
+
+.product-box-footer
+  display: flex
+  justify-content: space-between
+
+.feature-page-product
+  margin-top: 110px
+
+.feature-page-product-box
+  background-color: $black
+  display: flex
+  padding: 90px 0
+
+.feature-box-product
+  display: flex
+  justify-content: space-between
+
+.feature-box-content
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 330px
+  margin-left: 60px
+
+
+.text-centre
+  text-align: center
+
+.feature-img-icon
+  margin-bottom: 28px
+
+.all-view-link:hover
+  color: $white
+  background-color: $rosy-pink
+
+

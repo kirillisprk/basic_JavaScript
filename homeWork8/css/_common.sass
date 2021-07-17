@@ -1,0 +1,76 @@
+@import "var"
+
+//border
+@mixin borderClass($size, $color)
+  border: $size solid $color
+
+
+//треугольник на выпадающих меню
+@mixin triangle($top, $right, $bottom, $left)
+  content: ""
+  display: block
+  width: 12px
+  height: 12px
+  border-left: 1px solid $grey-very-light
+  border-top: 1px solid $grey-very-light
+  transform: rotate(45deg)
+  background-color: $white
+  position: absolute
+  top: $top
+  right: $right
+  bottom: $bottom
+  left: $left
+
+
+//Стили ссылок меню
+.classNavLink
+  text-decoration: none
+  display: block
+  font-size: 14px
+  line-height: 28px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: $black-light
+
+  &:hover
+    color: $rosy-pink
+
+.classNavHeading
+  font-size: 14px
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 0.025em
+  color: $black
+  border-bottom: 2px solid $grey-very-light
+  padding-bottom: 8px
+
+//кнопки в корзине
+.classButtonBasket
+  display: block
+  background-color: $white
+  width: 100%
+  text-decoration: none
+  padding: 15px 0
+  text-align: center
+  font-size: 14px
+  line-height: 1.2
+  font-weight: 700
+  text-transform: uppercase
+  margin-bottom: 15px
+
+//кнопки в футоре
+.classLinkShare
+  width: 32px
+  height: 32px
+  display: inline-block
+  text-align: center
+  background: $white
+  font-size: 16px
+  line-height: 30px
+  font-weight: 400
+  letter-spacing: 0.025em
+  color: $grey
+  text-decoration: none
+  margin-right: 5px
+
+

@@ -1,0 +1,105 @@
+@import "var"
+@import "common"
+
+.nav-flex
+  display: flex
+  justify-content: center
+
+.nav-menu-ul
+  list-style-type: none
+
+  .nav-menu-ul__list
+    position: relative
+
+    &:hover .nav-menu-ul__mega-box
+      display: flex
+
+    &:hover .nav-menu-ul__link
+      color: $rosy-pink
+
+    .nav-menu-ul__link
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 14px
+      font-weight: 700
+      color: $black
+      padding: 15px 35px
+      display: block
+
+
+    .nav-menu-ul__mega-box
+      display: none
+      position: absolute
+      background-color: $white
+      @include borderClass(1px, $grey-very-light)
+      border-radius: 5px
+      padding: 20px
+      top: 40px
+      z-index: 1
+
+      &:before
+        @include triangle(-7px, 0, 0, 45px)
+
+      .mega-box__item-box
+        width: 235px
+        margin-right: 50px
+
+      &:last-of-type
+        margin-right: 0
+
+        .item-box__heading
+          @extend .classNavHeading
+
+        .margin-heading
+          margin-top: 16px
+
+        .item-box__link
+          @extend .classNavLink
+
+        .item-box__img-menu-link
+          text-decoration: none
+          display: block
+          margin-left: -20px
+          width: 255px
+          height: 118px
+          @include borderClass(1px, $white)
+          margin-top: 20px
+
+          &:hover
+            @include borderClass(1px, $rosy-pink)
+
+          &:hover .block-text-super
+            color: $rosy-pink
+
+          .img-menu-link__block
+            background: $white $imgMegaMenu no-repeat
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: flex-end
+            align-items: flex-end
+
+          .block-text-super
+            font-size: 22px
+            line-height: 28px
+            font-weight: 900
+            text-transform: uppercase
+            letter-spacing: 0.025em
+            color: $white
+            margin: 10px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

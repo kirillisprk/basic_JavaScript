@@ -1,0 +1,64 @@
+@import "var"
+@import "header"
+@import "navigation"
+@import "subscribe"
+@import "footer"
+@import "footer-copy-rite"
+@import "product"
+@import "table-basket"
+@import "reset-Input"
+@import "product-page"
+@import "сheckout"
+@import "responsive"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+
+body
+  font-family: $fontFamily
+
+.container
+  max-width: $maxWidth
+  margin: 0 auto
+  height: 100%
+
+.content-padding
+  padding: 2% 2% 0
+
+//Стиль для зеркалирования триугольника когда меню не помещается на экран
+.last:hover .nav-menu-ul__mega-box
+  right: 0
+
+.last:hover .nav-menu-ul__mega-box:before
+  right: 65px
+  left: auto
+
+.line-horizon
+  overflow: hidden
+  position: relative
+  margin: 0
+  text-align: center
+  white-space: nowrap
+  width: 100%
+
+  &:before, &:after
+    content: ''
+    display: inline-block
+    position: relative
+    top: -1px
+    width: 50%
+    height: 3px
+    background: white
+
+  &:before
+    left: -10px
+    margin-left: -50%
+
+  &:after
+    left: 10px
+    margin-right: -50%
+
+

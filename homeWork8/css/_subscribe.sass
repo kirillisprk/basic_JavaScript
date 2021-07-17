@@ -1,0 +1,108 @@
+@import "var"
+@import "common"
+
+.subscribe
+  height: 440px
+  margin-top: 100px
+  background: rgba(242, 242, 242, 0.5) $imgSubscribeBackground no-repeat 0 -40px
+  background-size: cover
+
+
+.subscribe-flex
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.subscribe-review
+  display: flex
+
+.subscribe-review-info
+  margin-left: 28px
+
+  .review-text
+    width: 390px
+    font-size: 16px
+    line-height: 26px
+    font-weight: 400
+    font-style: italic
+    letter-spacing: 0.4px
+    color: $black
+
+  .review-name
+    font-size: 16px
+    margin-top: 10px
+    font-weight: 700
+    letter-spacing: 0.025em
+    color: $rosy-pink
+
+  .review-name-small
+    display: block
+    font-size: 12px
+    line-height: 14px
+    font-weight: 300
+    color: $black
+    margin-top: 10px
+
+
+  .slider-link-action
+    width: 40px
+    height: 5px
+    display: inline-block
+    margin-right: 10px
+    background-color: $grey-very-light
+
+  .activity
+    background-color: $rosy-pink
+
+
+.vertical-divider
+  border-left: 2px solid $white
+  height: 100%
+
+.subscribe-right
+  text-align: center
+
+  .subscribe-form-title
+    font-size: 24px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.03em
+    line-height: 54px
+    color: $black
+    margin-bottom: 30px
+
+  .subscribe-form-title-small
+    font-size: 14px
+    line-height: 24px
+    text-transform: none
+
+  .form-subscribe-email
+    display: flex
+
+    .subscribe-email-input
+      padding: 15px 30px
+      width: 334px
+      border-top-left-radius: 23px
+      border-bottom-left-radius: 23px
+      @include borderClass(1px, $grey-dark)
+      outline: none
+      background-color: $grey-dark
+
+    .subscribe-button
+      border-top-right-radius: 23px
+      border-bottom-right-radius: 23px
+      @include borderClass(1px, $rosy-pink)
+      background-color: $rosy-pink
+      color: $white
+      font-size: 14px
+      font-weight: 400
+      letter-spacing: 0.025em
+      width: 100px
+
+      &:hover
+        cursor: pointer
+        background-color: $white
+        color: $rosy-pink
+
+
+
