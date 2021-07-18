@@ -12,6 +12,12 @@
   padding: 0
   cursor: pointer
   border: none
+  z-index: 100
+
+.product-basket
+  display: flex
+  align-items: center
+  justify-content: space-between
 
 .button__icon-close
   color: $grey
@@ -164,38 +170,39 @@
       .add-product__item-basket
         display: flex
         align-items: center
-        justify-content: space-between
         border-bottom: 1px solid $grey-very-light
         padding: 15px 0
         text-decoration: none
+        flex: 1
+        justify-content: space-evenly
 
-        &:hover .product-description__title
-          color: $rosy-pink
+      &:hover .product-description__title
+        color: $rosy-pink
 
-        .product-description__title
-          font-size: 12px
-          line-height: 1.2
-          font-weight: 700
-          text-transform: uppercase
-          color: $black
+      .product-description__title
+        font-size: 12px
+        line-height: 1.2
+        font-weight: 700
+        text-transform: uppercase
+        color: $black
 
-        .product-description__rating
-          color: $yellow
-          font-size: 14px
-          display: flex
-          margin: 9px 0
+      .product-description__rating
+        color: $yellow
+        font-size: 14px
+        display: flex
+        margin: 9px 0
 
-        .product-description__praise-text
-          font-size: 12px
-          line-height: 1.2
-          font-weight: 400
-          text-transform: uppercase
-          color: $rosy-pink
+      .product-description__praise-text
+        font-size: 12px
+        line-height: 1.2
+        font-weight: 400
+        text-transform: uppercase
+        color: $rosy-pink
 
-          .praise__special-text
-            font-size: 10px
-            margin-right: 5px
-            margin-left: 5px
+        .praise__special-text
+          font-size: 10px
+          margin-right: 5px
+          margin-left: 5px
 
       .add-product__total-price
         display: flex
