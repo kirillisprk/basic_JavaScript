@@ -9,10 +9,12 @@
 
 .product-delete__button
   background-color: $white
-  padding: 0
   cursor: pointer
   border: none
-  z-index: 100
+  padding: 15px
+
+  &:hover .button__icon-close
+    color: $rosy-pink
 
 .product-basket
   display: flex
@@ -21,9 +23,6 @@
 
 .button__icon-close
   color: $grey
-
-  &:hover
-    color: $rosy-pink
 
 
 .header-flex
@@ -174,7 +173,7 @@
         padding: 15px 0
         text-decoration: none
         flex: 1
-        justify-content: space-evenly
+
 
       &:hover .product-description__title
         color: $rosy-pink
@@ -278,7 +277,8 @@
   height: 85px
 
 
-
+.item-basket__product-description
+  margin-left: 20px
 
 
 

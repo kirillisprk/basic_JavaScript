@@ -134,15 +134,18 @@ function addProductButton(button) {
     });
 }
 
+function start() {
+//Находим все кнопки добавить в корзину на странице добавляем событие на клик
+    let buttonAddCart = document.querySelectorAll('.box-add');
+    buttonAddCart.forEach((element) => {
+        addProductButton(element);
+
+    });
+}
 
 let productInBasket = [];
-
-//Находим все кнопки добавить в корзину на странице добавляем событие на клик
-let buttonAddCart = document.querySelectorAll('.box-add');
-buttonAddCart.forEach((element) => {
-    addProductButton(element);
-
-});
+//должна выполняться после загрузки страницы целиком
+window.onload = start;
 
 
 

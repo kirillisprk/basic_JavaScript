@@ -60,10 +60,12 @@
 
 .product-delete__button {
   background-color: #ffff;
-  padding: 0;
   cursor: pointer;
   border: none;
-  z-index: 100;
+  padding: 15px;
+}
+.product-delete__button:hover .button__icon-close {
+  color: #f16d7f;
 }
 
 .product-basket {
@@ -74,9 +76,6 @@
 
 .button__icon-close {
   color: #838383;
-}
-.button__icon-close:hover {
-  color: #f16d7f;
 }
 
 .header-flex {
@@ -245,7 +244,6 @@
   padding: 15px 0;
   text-decoration: none;
   flex: 1;
-  justify-content: space-evenly;
 }
 .header-right .header-right__basket .basket__add-product:hover .product-description__title {
   color: #f16d7f;
@@ -347,6 +345,10 @@
 .product-img__img {
   width: 72px;
   height: 85px;
+}
+
+.item-basket__product-description {
+  margin-left: 20px;
 }
 
 .classNavLink, .nav-menu-ul .nav-menu-ul__list .nav-menu-ul__mega-box:last-of-type .item-box__link, .header-left .header-left__drop-down-menu .drop-down-menu__menu-content .menu-content__link {
