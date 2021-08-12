@@ -1,0 +1,226 @@
+@import "var"
+@import "var"
+@import "common"
+
+
+.breadcrumbs
+  height: 148px
+  background: #f8f3f4
+
+.flex-breadcrumbs
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.current-product__title
+  font-size: 24px
+  line-height: 20px
+  color: $rosy-pink
+
+.current-breadcrumbs
+  display: flex
+
+
+  .current-breadcrumbs-link
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.43
+    color: $grey-light
+    text-decoration: none
+    display: block
+    cursor: pointer
+
+    &:hover
+      color: $rosy-pink
+
+  .active-breadcrumbs
+    font-weight: bold
+    color: $rosy-pink
+
+.carousel
+  position: relative
+
+.flex-carousel
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.carousel-content
+  background-color: #f7f7f7
+
+  .carousel-img
+    width: 100%
+    background: url(../img/product_page.png) no-repeat center
+    height: 777px
+
+
+  .carousel-link
+    text-decoration: none
+    display: block
+    width: 47px
+    height: 47px
+    background-color: rgba(42, 42, 42, 0.15)
+    padding: 15px
+    color: $white
+
+    &:hover
+      color: $rosy-pink
+
+.product-page-description
+  position: relative
+
+.product-page-content
+  height: 730px
+  @include borderClass(1px, $grey-very-light)
+  background-color: $white
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: -60px
+
+  .container-product-page
+    max-width: 620.3px
+    margin: 0 auto
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+    .product-page-content__title
+      padding-top: 70px
+      font-size: 14px
+      font-weight: bold
+      line-height: 1.71
+      color: $rosy-pink
+      border-bottom: 1px solid $grey-very-light
+      padding-bottom: 3px
+
+    .divider
+      width: 63px
+      height: 4px
+      background-color: $rosy-pink
+      margin-top: -3px
+
+
+    .product-page-content__subtitle
+      font-size: 18px
+      font-weight: 900
+      color: $black-light
+      margin-top: 11px
+      margin-bottom: 20px
+
+    .product-page-content__rating
+      color: $yellow
+      font-size: 19px
+      display: flex
+      margin-bottom: 20px
+
+    .product-page-content__description
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.71
+      color: $black-light
+      text-align: center
+
+    .product-page-content__composition
+      display: flex
+      justify-content: space-around
+      width: 100%
+      margin-top: 20px
+      margin-bottom: 30px
+
+      .composition__mute
+        font-size: 14px
+        font-weight: bold
+        line-height: 1.71
+        color: $grey-light
+
+        .composition
+          color: $black
+
+    .product-page-content-price
+      font-size: 24px
+      font-weight: bold
+      text-align: center
+      color: $rosy-pink
+      margin-bottom: 40px
+
+    .product-page-content__divider
+      height: 1px
+      width: 100%
+      background-color: $grey-very-light
+
+    .form-choose
+      display: flex
+      justify-content: space-between
+      width: 537px
+      margin-top: 60px
+
+
+    .chose-labile
+      font-weight: bold
+      font-size: 14px
+      color: $black
+      margin-bottom: 13px
+
+    .input-chose
+      width: 144px
+      padding: 15px
+      @include borderClass(1px, $grey-very-light)
+      background-color: $white
+      outline: none
+
+    .choose-button
+      margin-top: 30px
+      padding: 15px
+      @include borderClass(1px, $rosy-pink)
+      width: 100%
+      color: $rosy-pink
+      background-color: $white
+      cursor: pointer
+
+      &:active
+        background-color: $rosy-pink
+        color: $white
+
+      &:hover
+        background-color: $rosy-pink
+        color: $white
+
+
+      .add-to-cart
+        display: flex
+        align-items: center
+        justify-content: center
+
+
+      .basket__img-buy
+        margin-right: 15px
+
+.you-may-like-also
+  margin-top: 113px
+
+  .you-may-like-also__header
+    font-size: 24px
+    font-weight: 900
+    text-align: center
+    color: $black-light
+    margin-bottom: 67px
+
+
+.choose-button:hover
+  background-color: #f16d7f
+  color: white
+
+
+
+
+
+
+
+
+
+
+
+
